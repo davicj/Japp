@@ -1,0 +1,6 @@
+<% if usert_signed_in? %>
+  <h2>Bienvenid@ <%= current_usert.name%></h2>
+  <p><%= link_to 'Deseas Recibir Contenido Exclusivo en tu correo?', controller: 'fwelcome' %></p>
+  <% else %>
+  <h2>Do you want to be part of our community</h2>
+<% end %>
